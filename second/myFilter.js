@@ -1,4 +1,4 @@
-function myFilter(array, callback){
+const myFilter = (array, callback) => {
 	let newarray = []
 	for (let i=0; i<array.length; i++) {
         if (callback(array[i])){
@@ -7,6 +7,8 @@ function myFilter(array, callback){
     }
     return newarray;
 }
+
+//Test Below
 
 function test(item){
 	if (item >= 2) {

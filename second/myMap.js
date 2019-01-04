@@ -1,7 +1,9 @@
-function myMap (array, callback){
+const myMap = (array, callback) => {
 	var newarray = callback(array)
 	return newarray;
 }
+
+//Test Below
 
 function test(array){
 	for (let i=0; i<array.length; i++) {

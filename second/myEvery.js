@@ -1,4 +1,4 @@
-function myEvery(array, callback){
+const myEvery = (array, callback) => {
 	for (let i=0; i<array.length; i++) {
         if (!callback(array[i])){
         	return false;
@@ -7,8 +7,10 @@ function myEvery(array, callback){
     return true;
 }
 
+//Test Below
+
 function test(item){
-	if (item > 2){
+	if (item > 0){
 		return true;
 	} else {
 		return false;
